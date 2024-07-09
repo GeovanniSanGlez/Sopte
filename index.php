@@ -62,7 +62,7 @@
                                                 <span aria-hidden="true">×</span>
                                             </button>
                                             <i class="font-icon font-icon-warning"></i>
-                                            Los campos estan vacios.
+                                            Los campos estan vacioss.
                                         </div>
                                     <?php
                                 break;
