@@ -816,7 +816,7 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
+  /* speak: none; */
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -831,7 +831,7 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
+  /* speak: none; */
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
