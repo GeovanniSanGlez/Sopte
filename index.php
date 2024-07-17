@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     // require_once("config/conexion.php");
     if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
@@ -119,3 +120,6 @@
 
 </body>
 </html>
+=======
+<h1>hola</h1>
+>>>>>>> 37e489515edcc08f27882974c78822c173962839
