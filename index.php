@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 <?php
-    // require_once("config/conexion.php");
+    require_once("config/conexion.php");
     if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
         require_once("models/Usuario.php");
         $usuario = new Usuario();
@@ -32,39 +31,39 @@
     <div class="page-center">
         <div class="page-center-in">
             <div class="container-fluid">
-
                 <form class="sign-box" action="" method="post" id="login_form">
-
-                    <input type="hidden" id="rol_id" name="rol_id" value="1">
-
                     <div class="sign-avatar">
                         <img src="public/1.jpg" alt="" id="imgtipo">
                     </div>
-                    <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
+                    <header class="sign-title" id="lbltitulo">Acceso Sopter</header>
 
                     <?php
                         if (isset($_GET["m"])){
                             switch($_GET["m"]){
                                 case "1";
                                     ?>
-                                        <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">
+                                        <div class="alert alert-danger" role="alert">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
+                                                <span aria-hidden="true">&times;</span>
                                             </button>
-                                            <i class="font-icon font-icon-warning"></i>
-                                            El Usuario y/o Contraseña son incorrectos.
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
+                                                <span>Usuario y/o Contraseña son incorrectos.</span>
+                                            </div>
+                                            
                                         </div>
                                     <?php
                                 break;
 
                                 case "2";
                                     ?>
-                                        <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">
+                                        <div class="alert alert-denger" role="alert">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
+                                                <span aria-hidden="true">&times;</span>
                                             </button>
-                                            <i class="font-icon font-icon-warning"></i>
-                                            Los campos estan vacios.
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
+                                                <samp>Campos estan vacios.</samp> 
                                         </div>
                                     <?php
                                 break;
@@ -81,9 +80,6 @@
                     <div class="form-group">
                         <div class="float-right reset">
                             <a href="reset-password.html">Cambiar Contraseña</a>
-                        </div>
-                        <div class="float-left reset">
-                            <a href="#" id="btnsoporte">Acceso Soporte</a>
                         </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
@@ -116,10 +112,8 @@
 </script>
 <script src="public/js/app.js"></script>
 
-<script type="text/javascript" src="datos.js"></script>
+<!-- <script type="text/javascript" src="datos.js"></script> -->
 
 </body>
 </html>
-=======
-<h1>hola</h1>
->>>>>>> 37e489515edcc08f27882974c78822c173962839
+
