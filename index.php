@@ -38,37 +38,37 @@
                     <header class="sign-title" id="lbltitulo">Acceso Sopter</header>
 
                     <?php
-                        if (isset($_GET["m"])){
-                            switch($_GET["m"]){
-                                case "1";
-                                    ?>
-                                        <div class="alert alert-danger" role="alert">
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            <div class="d-flex align-items-center justify-content-start">
-                                                <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
-                                                <span>Usuario y/o Contraseña son incorrectos.</span>
-                                            </div>
+                        // if (isset($_GET["m"])){
+                        //     switch($_GET["m"]){
+                        //         case "1";
+                        //             ?>
+                        <!-- //                 <div class="alert alert-danger" role="alert">
+                        //                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        //                         <span aria-hidden="true">&times;</span>
+                        //                     </button>
+                        //                     <div class="d-flex align-items-center justify-content-start">
+                        //                         <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
+                        //                         <span>Usuario y/o Contraseña son incorrectos.</span>
+                        //                     </div>
                                             
-                                        </div>
+                        //                 </div> -->
                                     <?php
-                                break;
+                                // break;
 
-                                case "2";
+                                // case "2";
                                     ?>
-                                        <div class="alert alert-denger" role="alert">
+                                        <!-- <div class="alert alert-denger" role="alert">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                             <div class="d-flex align-items-center justify-content-start">
                                                 <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
                                                 <samp>Campos estan vacios.</samp> 
-                                        </div>
+                                        </div> -->
                                     <?php
-                                break;
-                            }
-                        }
+                        //         break;
+                        //     }
+                        // }
                     ?>
 
                     <div class="form-group">
@@ -111,9 +111,6 @@
     });
 </script>
 <script src="public/js/app.js"></script>
-
-<!-- <script type="text/javascript" src="datos.js"></script> -->
-
 </body>
 </html>
 

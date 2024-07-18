@@ -19,7 +19,7 @@
         }
         
         public function ruta(){
-            return "http://localhost:90/SOPTE";
+            return "http://localhost:90/Soptecni/";
         }
         
         }
