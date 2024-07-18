@@ -38,37 +38,34 @@
                     <header class="sign-title" id="lbltitulo">Acceso Sopter</header>
 
                     <?php
-                        // if (isset($_GET["m"])){
-                        //     switch($_GET["m"]){
-                        //         case "1";
-                        //             ?>
-                        <!-- //                 <div class="alert alert-danger" role="alert">
-                        //                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        //                         <span aria-hidden="true">&times;</span>
-                        //                     </button>
-                        //                     <div class="d-flex align-items-center justify-content-start">
-                        //                         <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
-                        //                         <span>Usuario y/o Contraseña son incorrectos.</span>
-                        //                     </div>
-                                            
-                        //                 </div> -->
-                                    <?php
-                                // break;
-
-                                // case "2";
+                        if (isset($_GET["m"])){
+                            switch($_GET["m"]){
+                                case "1";
                                     ?>
-                                        <!-- <div class="alert alert-denger" role="alert">
+                                        <div class="alert alert-danger alert-icon alert-close alert-dismissible fade in" role="alert">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
-                                            <div class="d-flex align-items-center justify-content-start">
-                                                <i class="icon ion-ios-checkmart alert-icon tx-32 mg-t-5 mg-xs-t-0"></i>
-                                                <samp>Campos estan vacios.</samp> 
-                                        </div> -->
+                                            <i class="font-icon font-icon-warning"></i>
+                                            Usuario y/o Contraseña son incorrectos.
+                                        </div>
+
                                     <?php
-                        //         break;
-                        //     }
-                        // }
+                                break;
+
+                                case "2";
+                                ?>
+                                    <div class="alert alert-danger alert-icon alert-close alert-dismissible fade in" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                        <i class="font-icon font-icon-warning"></i>
+                                        Campos estan vacios.
+                                    </div>
+                                <?php
+                                break;
+                            }
+                        }
                     ?>
 
                     <div class="form-group">
