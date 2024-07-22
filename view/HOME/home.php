@@ -22,6 +22,7 @@
 	<!-- Contenido -->
 
 	<?php require_once("../MainJs/js.php");?>
+	<script type="text/javascript" src="home.js"></script>
 
 </body>
 </html>
