@@ -1,3 +1,7 @@
+<?php
+  require_once("../../config/conexion.php"); 
+  if(isset($_SESSION["usu_id"])){ 
+?>
 <!DOCTYPE html>
 <html>
 	<?php require_once("../MainHead/head.php");?>
@@ -15,8 +19,16 @@
 			Blank page.
 		</div>
 	</div>
+	<!-- Contenido -->
 
 	<?php require_once("../MainJs/js.php");?>
 
 </body>
 </html>
+<?php
+  }else{
+	$conectar = new Conectar();
+    header("Location:".Conectar::ruta()."../index.php"); 
+	exit();
+  }
+?>
