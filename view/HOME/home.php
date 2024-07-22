@@ -9,12 +9,12 @@
 
 	<div class="mobile-menu-left-overlay"></div>
 
-
+	<?php require_once("../MainNav/nav.php");?>
 	<div class="page-content">
 		<div class="container-fluid">
 			Blank page.
-		</div><!--.container-fluid-->
-	<!-- </div>.page-content -->
+		</div>
+	</div>
 
 	<?php require_once("../MainJs/js.php");?>
 
