@@ -14,13 +14,130 @@
 	<div class="mobile-menu-left-overlay"></div>
 
 	<?php require_once("../MainNav/nav.php");?>
+	
+	<!-- Contenido -->
 	<div class="page-content">
 		<div class="container-fluid">
-			Blank page.
+
+			<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h3>Nuevo Ticket</h3>
+							<ol class="breadcrumb breadcrumb-simple">
+								<li><a href="#">Home</a></li>
+								<li class="active">Nuevo Ticket</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="box-typical box-typical-padding">
+				<p>
+					Desde esta ventana podra generar Nuevos Tickets de SOPORTE.
+				</p>
+
+				<h5 class="m-t-lg with-border">Ingresar Información</h5>
+
+				<div class="row">
+					<form method="post" id="ticket_form">
+
+						<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
+
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_titulo">Nombre</label>
+								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Nombre del Operador">
+							</fieldset>
+						</div>
+
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_titulo">Ubicacion</label>
+								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese la Ubicacion">
+							</fieldset>
+						</div>
+						<!-- SELEC DEPARTAMANTO -->
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Departamento</label>
+								<select id="cat_id" name="cat_id" class="form-control">
+  									<option selected>Seleccione Departamento</option>
+  									<option value="1">DIRECCION GENERAL</option>
+  									<option value="2">DIRECCION DE POMOCION Y DIVULGACION</option>
+  									<option value="3">UNIDAD DE GESTION</option>
+									<option value="4">DIRECCION DE PATRIMONIO MATERIAL E IMATERIAL</option>
+									<option value="5">DIRECCION DE OBRAS Y PROYECTOS</option>
+  									<option value="6">DIRECCION JURIDICA Y NORMATIVA</option>
+									<option value="7">UNIDAD DE COORDINACION</option>
+									<option value="8">AGEC</option>
+									<option value="9">DIRECCION DE TECNOLOGIA Y SISTEMAS</option>
+								</select>
+							</fieldset>
+						</div>
+
+						<!-- <div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Departamento</label>
+								<select id="cat_id" name="cat_id" class="form-control">
+									<option selected>Seleccione Departamento</option>
+									<option value="1">DIRECCION GENERAL</option>
+									<option value="2">DIRECCION DE POMOCION Y DIVULGACION</option>
+									<option value="3">UNIDAD DE GESTION</option>
+									<opcion value="4">DIRECCION DE PATRIMONIO MATERIAL E IMATERIAL</opcion>
+									<opcion value="5">DIRECCION DE OBRAS Y PROYECTOS</opcion>
+									<opcion value="6">DIRECCION JURIDICA Y NORMATIVA</opcion>
+									<opcion value="7">UNIDAD DE COORDINACION</opcion>
+									<opcion value="8">AGEC</opcion>
+									<opcion value="9">DIRECCION DE TECNOLOGIA Y SISTEMAS</opcion>
+								</select>
+							</fieldset>
+						</div> -->
+
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Tipo de Servicio</label>
+								<select id="cat_id" name="cat_id" class="form-control">
+									<option selected>Seleccione Tipo de Servicio</option>
+									<option value="8">Hardware</option>
+									<option value="8">Sofware</option>
+									<option value="8">otros</option>
+									<option value="8">Comunicacion</option>
+								</select>
+							</fieldset>
+						</div>
+
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">Documentos Adicionales</label>
+								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+							</fieldset>
+						</div>
+
+						<!-- <div class="col-lg-12">
+  							<label class="form-label semibold" for="tick_descrip">Descripción</label>
+  							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div> -->
+
+						<div class="col-lg-12">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="tick_descrip">Descripción</label>
+								<div class="summernote-theme-1">
+									<textarea class="form-control" id="tick_descrip" name="tick_descrip" class="summernote" name="name"></textarea>
+								</div>
+							</fieldset>
+						</div>
+						<div class="col-lg-12">
+							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
 		</div>
 	</div>
 	<!-- Contenido -->
-
 	<?php require_once("../MainJs/js.php");?>
 	<script type="text/javascript" src="nuevoticket.js"></script>
 
