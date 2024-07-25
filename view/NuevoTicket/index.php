@@ -46,22 +46,22 @@
                         
 						<div class="col-lg-12">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="tick_titulo">Nombre</label>
-								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Nombre del Operador">
+								<label class="form-label semibold" for="tick_nombre">Nombre</label>
+								<input type="text" class="form-control" id="tick_nombre" name="tick_nombre" placeholder="Ingrese Nombre del Operador">
 							</fieldset>
 						</div>
                         
 						<div class="col-lg-12">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="tick_titulo">Ubicacion</label>
-								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese la Ubicacion">
+								<label class="form-label semibold" for="tick_ubicacion">Ubicacion</label>
+								<input type="text" class="form-control" id="tick_ubicacion" name="tick_ubicacion" placeholder="Ingrese la Ubicacion">
 							</fieldset>
 						</div>
 						<!-- SELEC DEPARTAMANTO -->
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Departamento</label>
-								<select id="cat_id" name="cat_id" class="form-control">
+								<label class="form-label semibold" for="tick_departa">Departamento</label>
+								<select id="tick_departa" name="tick_departa" class="form-control">
   									<option selected>Seleccione Departamento</option>
   									<option value="1">DIRECCION GENERAL</option>
   									<option value="2">DIRECCION DE POMOCION Y DIVULGACION</option>
@@ -78,8 +78,8 @@
                         
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Tipo de Servicio</label>
-								<select id="cat_id" name="cat_id" class="form-control">
+								<label class="form-label semibold" for="tick_tipo">Tipo de Servicio</label>
+								<select id="tick_tipo" name="tick_tipo" class="form-control">
 									<option selected>Seleccione Tipo de Servicio</option>
 									<option value="8">Hardware</option>
 									<option value="8">Sofware</option>
@@ -91,8 +91,8 @@
                         
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Documentos Adicionales</label>
-								<input type="file" name="fileElem" id="fileElem" class="form-control" multiple>
+								<label class="form-label semibold" for="tick_docadicci">Documentos Adicionales</label>
+								<input type="file" name="tick_docadicci" id="tick_docadicci" class="form-control" multiple>
 							</fieldset>
 						</div>
 						
