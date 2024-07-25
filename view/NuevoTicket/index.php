@@ -41,7 +41,7 @@
                 
 				<div class="row">
 					<form method="post" id="ticket_form">
-                    
+						
 						<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
                         
 						<div class="col-lg-12">
@@ -104,6 +104,7 @@
 								</div>
 							</fieldset>
 						</div>
+						
 						<div class="col-lg-12">
 							<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
 						</div>
@@ -115,7 +116,7 @@
 	</div>
 	<!-- Contenido -->
 	<?php require_once("../MainJs/js.php");?>
-	<script type="text/javascript" src="nuevoticket.js"></script>
+	<script type="text/javascript" src="nuevotick.js"></script>
 
 </body>
 </html>
